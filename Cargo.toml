@@ -11,3 +11,4 @@ crate-type=["lib"]
 test = true
 
 [dependencies]
+esp32c3-hal = "0.15.0"

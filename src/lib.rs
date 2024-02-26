@@ -1,15 +1,9 @@
-//! Sakura OS
+#![no_std]
 
-fn ticks() -> u64 {
-    1_000_000_000u64
-}
+use device::Device;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+mod device;
 
-    #[test]
-    fn check_ticks() {
-        assert_eq!(1_000_000_000u64, ticks());
-    }
+fn init() {
+    let device = Device::new();
 }
